@@ -2,6 +2,12 @@
 
 This project is a calculator application developed in Kotlin, designed to perform a variety of mathematical and programming operations. The application includes three types of calculators: basic, advanced, and programmer.
 
+<p align="center">
+  <img src="https://github.com/0xsissN/project-images/blob/main/BasicCalculator.png?raw=true" alt="Basic Calculator" width="200"/>
+  <img src="https://github.com/0xsissN/project-images/blob/main/AdvancedCalculator.png?raw=true" alt="Advanced Calculator" width="200"/>
+  <img src="https://github.com/0xsissN/project-images/blob/main/ProgrammerCalculator.png?raw=true" alt="Programmer Calculator" width="200"/>
+</p>
+
 ## Description
 
 The application includes the following functionalities:
