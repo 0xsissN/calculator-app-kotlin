@@ -32,8 +32,11 @@ class CalculatorViewModel : ViewModel() {
     private fun performCalculation() {
         val number = state.number
         val option = state.option
-        val result: String = ""
-
+        var result: String = ""
+        if (option == "")
+            result = algorithmAdvanced(number)
+        else
+            result = algorithmProgrammer(number, option)
 
         state = state.copy(
             number = result
@@ -53,3 +56,10 @@ class CalculatorViewModel : ViewModel() {
     }
 }
 
+private fun algorithmAdvanced(number: String): String {
+    return advancedCalculator(number)
+}
+
+private fun algorithmProgrammer(number: String, option: String): String {
+    return programmerCalculator(number, option)
+}
