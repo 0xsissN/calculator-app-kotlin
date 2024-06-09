@@ -17,6 +17,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.sp
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -67,7 +68,7 @@ class MainActivity : ComponentActivity() {
                             Text(
                                 text = "Basic",
                                 color = if (selected.value == "Basic") Orange else Color.White,
-                                fontSize = MaterialTheme.typography.bodyLarge.fontSize
+                                fontSize = 18.sp
                             )
                         }
                         IconButton(
@@ -82,7 +83,7 @@ class MainActivity : ComponentActivity() {
                             Text(
                                 text = "Advanced",
                                 color = if (selected.value == "Advanced") Orange else Color.White,
-                                fontSize = MaterialTheme.typography.bodyLarge.fontSize
+                                fontSize = 18.sp
                             )
                         }
 
@@ -98,7 +99,7 @@ class MainActivity : ComponentActivity() {
                             Text(
                                 text = "Programmer",
                                 color = if (selected.value == "Programmer") Orange else Color.White,
-                                fontSize = MaterialTheme.typography.bodyLarge.fontSize
+                                fontSize = 18.sp
                             )
                         }
                     }

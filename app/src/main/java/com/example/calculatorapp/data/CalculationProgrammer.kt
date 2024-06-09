@@ -1,5 +1,3 @@
-package com.example.calculatorapp.data
-
 import kotlin.math.pow
 
 private var Octal = mutableMapOf<String, String>()
@@ -291,6 +289,13 @@ private fun deleteZeros(number: String): String {
     return x
 }
 
+private fun comprobationConversion(c1: String, c2: String, c3: String): Boolean{
+    if (c1.contains("null") || c2.contains("null") || c3.contains("null"))
+        return true
+    else
+        return false
+}
+
 private fun selectOperation(number: String): String {
     var res: String = ""
     res = when {
@@ -316,7 +321,7 @@ fun programmerCalculator(number: String, option: String): String {
             var binHex = allToHex(aux)
             var binOct = allToOct(aux)
             var binDec = binToDec(aux)
-            if (binHex == "null" || binOct == "null" || binDec == "null")
+            if (comprobationConversion(binHex, binOct, binDec))
                 return "Error"
             else
                 x = "Hex " + binHex + "\n\nOct " + binOct + "\n\nDec " + binDec
@@ -325,7 +330,7 @@ fun programmerCalculator(number: String, option: String): String {
             hexBin = deleteZeros(hexBin)
             var hexOct = allToOct(hexBin)
             var hexDec = binToDec(hexBin)
-            if (hexBin == "null" || hexOct == "null" || hexDec == "null")
+            if (comprobationConversion(hexBin, hexOct, hexDec))
                 return "Error"
             else
                 x = "Oct " + hexOct + "\n\nDec " + hexDec + "\n\nBin " + hexBin
@@ -334,7 +339,7 @@ fun programmerCalculator(number: String, option: String): String {
             decBin = deleteZeros(decBin)
             var decHex = allToHex(decBin)
             var decOct = allToOct(decBin)
-            if (decBin == "null" || decHex == "null" || decOct == "null")
+            if (comprobationConversion(decBin, decHex, decOct))
                 return "Error"
             else
                 x = "Hex " + decHex + "\n\nOct " + decOct + "\n\nBin " + decBin
@@ -343,7 +348,7 @@ fun programmerCalculator(number: String, option: String): String {
             octBin = deleteZeros(octBin)
             var octHex = allToHex(octBin)
             var octDec = binToDec(octBin)
-            if (octBin == "null" || octHex == "null" || octDec == "null")
+            if (comprobationConversion(octBin, octHex, octDec))
                 return "Error"
             else
                 x = "Hex " + octHex + "\n\nDec " + octDec + "\n\nBin " + octBin

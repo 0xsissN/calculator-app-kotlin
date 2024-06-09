@@ -1,10 +1,10 @@
 package com.example.calculatorapp
 
-import com.example.calculatorapp.data.programmerCalculator
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.junit.MockitoJUnitRunner
+import programmerCalculator
 
 @RunWith(MockitoJUnitRunner::class)
 class CalculatorProgrammer {
@@ -163,9 +163,9 @@ class CalculatorProgrammer {
 
     @Test
     fun test18() {
-        val input = "0101"
+        val input = "23∧33"
         val option = "Bin"
-        val expectedOutput = "Hex 5\n\nOct 5\n\nDec 5.0"
+        val expectedOutput = "Error"
         val output = programmerCalculator(input, option)
         assertEquals(expectedOutput, output)
     }
