@@ -1,4 +1,4 @@
-package com.example.calculatorapp.data
+package com.shadow.calculatorapp.data
 
 import kotlin.math.*
 

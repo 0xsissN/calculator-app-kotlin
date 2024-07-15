@@ -1,4 +1,4 @@
-package com.example.calculatorapp.ui.calculator
+package com.shadow.calculatorapp.ui.screens.calculator
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box

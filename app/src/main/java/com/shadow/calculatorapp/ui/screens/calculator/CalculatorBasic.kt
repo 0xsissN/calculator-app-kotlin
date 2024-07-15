@@ -1,4 +1,4 @@
-package com.example.calculatorapp.ui.calculator
+package com.shadow.calculatorapp.ui.screens.calculator
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -19,11 +19,11 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.calculatorapp.data.CalculatorViewModel
-import com.example.calculatorapp.domain.CalculatorAction
-import com.example.calculatorapp.ui.theme.LightGray
-import com.example.calculatorapp.ui.theme.MediumGray
-import com.example.calculatorapp.ui.theme.Orange
+import com.shadow.calculatorapp.ui.screens.CalculatorViewModel
+import com.shadow.calculatorapp.domain.CalculatorAction
+import com.shadow.calculatorapp.ui.theme.LightGray
+import com.shadow.calculatorapp.ui.theme.MediumGray
+import com.shadow.calculatorapp.ui.theme.Orange
 
 @Composable
 fun Basic() {

@@ -1,4 +1,4 @@
-package com.example.calculatorapp
+package com.shadow.calculatorapp
 
 import junit.framework.TestCase.assertEquals
 import org.junit.Test

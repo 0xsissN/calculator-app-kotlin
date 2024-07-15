@@ -1,11 +1,12 @@
-package com.example.calculatorapp.data
+package com.shadow.calculatorapp.ui.screens
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.example.calculatorapp.domain.CalculatorAction
-import com.example.calculatorapp.domain.CalculatorState
+import com.shadow.calculatorapp.data.advancedCalculator
+import com.shadow.calculatorapp.domain.CalculatorAction
+import com.shadow.calculatorapp.domain.CalculatorState
 import programmerCalculator
 
 class CalculatorViewModel : ViewModel() {
@@ -55,12 +56,12 @@ class CalculatorViewModel : ViewModel() {
             option = addOption
         )
     }
-}
 
-private fun algorithmAdvanced(number: String): String {
-    return advancedCalculator(number)
-}
+    private fun algorithmAdvanced(number: String): String {
+        return advancedCalculator(number)
+    }
 
-private fun algorithmProgrammer(number: String, option: String): String {
-    return programmerCalculator(number, option)
+    private fun algorithmProgrammer(number: String, option: String): String {
+        return programmerCalculator(number, option)
+    }
 }

@@ -1,4 +1,4 @@
-package com.example.calculatorapp.domain
+package com.shadow.calculatorapp.domain
 
 sealed class CalculatorAction {
     data class Number(val number: String) : CalculatorAction()

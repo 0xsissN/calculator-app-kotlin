@@ -1,6 +1,6 @@
-package com.example.calculatorapp
+package com.shadow.calculatorapp
 
-import com.example.calculatorapp.data.advancedCalculator
+import com.shadow.calculatorapp.data.advancedCalculator
 import junit.framework.TestCase
 import org.junit.Test
 import org.junit.runner.RunWith

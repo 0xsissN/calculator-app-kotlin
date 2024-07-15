@@ -1,4 +1,4 @@
-package com.example.calculatorapp.domain
+package com.shadow.calculatorapp.domain
 
 sealed class Screens(val screen: String) {
     data object CalculatorBasic : Screens("calculator-basic")
